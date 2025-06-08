@@ -16,7 +16,9 @@ function cargarVideo() {
     //video.play()
 }
 
-
+navigator.getBatery() //proceso asincrónico
+.then((resultado)=> console.log(resultado.level * 100))
+.catch((error)=> console.error(error))
 
 cargarVideo()
 
